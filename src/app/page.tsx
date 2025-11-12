@@ -6,6 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 
 
+
 export default function HomePage() {
   return (
     <main>
@@ -13,7 +14,7 @@ export default function HomePage() {
       <Section id="home" className="pt-16">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-5">
-              <h1 className="text-5xl font-bold leading-tight">
+              <h1 className="text-3xl font-bold leading-tight">
                 Paulo Díaz — Product Engineer
               </h1>
                 <p className="text-lg text-muted-foreground mt-4 max-w-xl">
@@ -30,11 +31,16 @@ export default function HomePage() {
               </div>
             <CTAButtons />
           </div>
-          <div className="rounded-xl border p-3">
+          <div className="rounded-xl border">
             {/* placeholder montage; swap later */}
-            <div className="aspect-video bg-[linear-gradient(135deg,#f5f5f5,#eaeaea)] rounded-lg grid place-items-center">
-              <span className="text-sm text-muted-foreground">Project montage placeholder</span>
-            </div>
+            <div className="relative w-full h-84">
+  <Image
+    src="/images/cardano.png"
+    alt="Cur8 cover"
+    fill
+    className="object-cover rounded-t-lg transition group-hover:scale-[1.02]"
+  />
+</div>
           </div>
         </div>
       </Section>
@@ -48,13 +54,13 @@ export default function HomePage() {
         Every product taught me something new — about users, systems, and speed.  
         Here are a few examples of how I helped teams move from idea to impact.
       </p>
- <div className="grid md:grid-cols-3 gap-6 mt-8">
+ <div className="grid md:grid-cols-4 gap-6 mt-8">
   <ProjectCard
     title="Cur8"
     blurb="At Cur8, I explored how design can reignite momentum in a stalled platform. I joined an acquisition-stage team to re-imagine the creator journey — using fast iterations, templates, and onboarding clarity to help the product learn from its users again. This experience taught me how UX and business strategy converge when a product needs to grow quickly and intelligently."
     badges={["Product Strategy","UX Design","PLG","Iterative Growth"]}
-    href="#cur8"
-    image="/images/figma.png"
+    href="https://www.cur8.io/home"
+    image="/images/cardano.png"
     alt="Cur8 UX thumbnails"
   />
 
@@ -62,7 +68,7 @@ export default function HomePage() {
     title="Metera (DeFi UX)"
     blurb="Metera challenged me to make trust and usability tangible inside DeFi. Working with engineers and protocol designers, I translated abstract blockchain logic into human language and visual confidence. It showed me that great UX isn’t just beauty or flow — it’s the foundation of adoption in complex systems."
     badges={["Fintech / DeFi","Security UX","System Thinking"]}
-    href="#metera"
+    href="https://www.meteraprotocol.io/"
     image="/images/metera.png"
     alt="Metera UI"
   />
@@ -71,7 +77,7 @@ export default function HomePage() {
     title="Visiplay (OTT)"
     blurb="Visiplay became my laboratory for decision design. I restructured content discovery so users could move from curiosity to commitment without friction. It reminded me that growth isn’t only about features — it’s about helping users feel certain they’re in the right place."
     badges={["Media / OTT","Information Architecture","Conversion UX"]}
-    href="#visiplay"
+    href="https://www.visionsciencelabs.com/"
     image="/images/visiplay.png"
     alt="Visiplay UI"
   />
@@ -80,11 +86,12 @@ export default function HomePage() {
     title="VoiceERP (Fleet AI)"
     blurb="VoiceERP united everything I’d learned — design, code, and business strategy. I partnered with a startup team to shape dispatcher and driver experiences that reduce operational noise and surface data that drives real decisions. It reinforced my belief that UX can become the operating system of a business when designed with empathy and measurable intent."
     badges={["Logistics","B2B SaaS","Data Visualization","Product Strategy"]}
-    href="#voiceerp"
+    href="https://voiceerp.ai/"
     image="/images/voiceerp.png"
     alt="VoiceERP UI"
   />
 </div>
+
 </Section>
 
 
@@ -250,8 +257,8 @@ export default function HomePage() {
         <h2 className="section-title">Contact</h2>
         <p className="section-subtitle">Let’s talk about reimagining the creator experience.</p>
         <div className="mt-6 flex gap-3">
-          <a className="underline" href="mailto:YOUR_EMAIL">YOUR_EMAIL</a>
-          <a className="underline" href="https://www.linkedin.com/in/YOUR_HANDLE" target="_blank">LinkedIn</a>
+          <a className="underline" href="pdiazgay.iepaut25@london.edu">pdiazgay.iepaut25@london.edu</a>
+          <a className="underline" href="https://www.linkedin.com/in/paulodiazg/" target="_blank">LinkedIn</a>
         </div>
       </Section>
     </main>
