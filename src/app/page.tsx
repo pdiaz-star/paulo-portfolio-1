@@ -38,7 +38,7 @@ export default function HomePage() {
     src="/images/cardano.png"
     alt="Cur8 cover"
     fill
-    className="object-cover rounded-t-lg transition group-hover:scale-[1.02]"
+    className="object-fit rounded-t-lg transition group-hover:scale-[1.02] rounded-xl"
   />
 </div>
           </div>
@@ -60,7 +60,7 @@ export default function HomePage() {
     blurb="At Cur8, I explored how design can reignite momentum in a stalled platform. I joined an acquisition-stage team to re-imagine the creator journey — using fast iterations, templates, and onboarding clarity to help the product learn from its users again. This experience taught me how UX and business strategy converge when a product needs to grow quickly and intelligently."
     badges={["Product Strategy","UX Design","PLG","Iterative Growth"]}
     href="https://www.cur8.io/home"
-    image="/images/cardano.png"
+    image="/images/figma.png"
     alt="Cur8 UX thumbnails"
   />
 
